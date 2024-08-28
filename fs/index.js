@@ -56,6 +56,14 @@ const readFile = async () => {
         then another callback you can open callback.js to see what is a callback hell
 */
 
+//  4------------- appendFile() Function--------------------------
+    const appendFile = ()=>{
+        fs.appendFile("hello.txt","some more text appendfile function",(e,d)=>{
+            console.log(d)
+        })
+    }
+
 // withWriteFile()
 // withWriteFileSync()
-readFile();
+// readFile();
+appendFile()
